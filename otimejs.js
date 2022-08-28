@@ -30,7 +30,7 @@ button.addEventListener('click',()=>{
         result.innerHTML="奴工的醫藥費"+overtimePay;
     }else{
         if(overtime>2 && overtime <= 8){
-            const overtimePay = parseInt(hourSalary*2*secondHr)+parseInt(hourSalary*parseInt(overtime-2)*thridHr).toFixed(0);
+            const overtimePay = parseInt(hourSalary*2*secondHr)+parseInt((hourSalary*parseInt(overtime-2))*thridHr).toFixed(0);
             result.innerHTML="奴工的醫藥費"+overtimePay;
         }else{
             if(overtime > 8 && overtime <=12){

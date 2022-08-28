@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+  
+    font-family: robot;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.index{
+    background-color: rgba(65, 65, 195, 0.805);
+    width: 400px;
+    color:white;
+    padding: 40px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.839);
+    text-align: center;
+}
+.index input{
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background: none;
+    padding:15px;
+    font-size: 20px;
+    border-radius: 25px;
+    outline: none;
+    color:white
+}
+.index input[type='text']{
+    border: 2px solid rgb(204, 35, 184);
+    width: 220px;
+
+}
+.index input[type='button']{
+    border: 2px solid rgb(0, 0, 0);
+    width: 100px;
+    cursor: pointer;
+
+}
+.index input[type='text']:focus{
+    border-color: rgb(138, 169, 28);
+    width: 150px;
+    transition: 0.7s;}
+
+.index input[type='button']:hover{
+    background-color: rgb(0, 0, 0);
+    transition: 0.7s;
+}
+
+.index select{
+    width: 200px;
+    font-size: 25px;
+    outline: none;
+    color:white 
+}
+

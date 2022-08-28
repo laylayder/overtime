@@ -29,11 +29,11 @@ button.addEventListener('click',()=>{
         const overtimePay = parseInt(hourSalary*overtime*secondHr).toFixed(0);
         result.innerHTML="奴工的醫藥費"+overtimePay;
     }else{
-        if(overtime>2 && overtime <= 8){
-            const overtimePay = parseInt(hourSalary*2*1.33)+(parseInt((hourSalary*parseInt(overtime-2))*1.66).toFixed(0);
+        if(overtime <= 8){
+            const overtimePay = parseInt(hourSalary*2*1.33)+parseInt(hourSalary*parseInt(overtime-2))*1.66.toFixed(0);
             result.innerHTML="奴工的醫藥費"+overtimePay;
         }else{
-            if(overtime > 8 && overtime <=12){
+            if(overtime <=12){
                 const overtimePay = parseInt(hourSalary*2*secondHr)+parseInt(hourSalary*6*thridHr)+（parseInt(hourSalary*parseInt (overtime-8))*eighthHr).toFixed(0);
                 result.innerHTML="奴工的醫藥費"+overtimePay;
         }else{

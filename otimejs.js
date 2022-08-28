@@ -38,7 +38,7 @@ button.addEventListener('click',()=>{
                 result.innerHTML="奴工的醫藥費"+overtimePay;
         }else{
             if(overtime>12){
-                result.innerHTML="您已經違反勞基法,請打1999";
+                result.innerHTML="您已經違反勞基法,請打1999或1955";
             }
         }
     }}

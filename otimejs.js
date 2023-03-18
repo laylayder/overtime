@@ -22,23 +22,23 @@ button.addEventListener('click',()=>{
     
     
     let hourSalary= salary/30/8;
-    let secondHr=1.33
-    let thridHr=1.66
-    let eighthHr=2.66
+    let secondHr=240/180;
+    let thridHr=240/144;
+    let eighthHr=240/90;
     if(overtime <= 2){
-        const overtimePay = parseInt(hourSalary*overtime*secondHr);
+        const overtimePay = parseInt(hourSalary*overtime*secondHr).toFixed(0);
         result.innerHTML="奴工的醫藥費"+overtimePay;
     }else{
         if(overtime <= 8){
-            const overtimePay = parseInt(hourSalary*2*secondHr)+parseInt(hourSalary*parseInt(overtime-2))*thridHr;
+            const overtimePay = parseInt(hourSalary*2*secondHr)+parseInt ((hourSalary*parseInt(overtime-2))*thridHr.toFixed(3));
             result.innerHTML="奴工的醫藥費"+overtimePay;
         }else{
             if(overtime > 8 && overtime <=12){
-                const overtimePay = parseInt(hourSalary*2*secondHr)+parseInt(hourSalary*6*thridHr)+parseInt(hourSalary*parseInt (overtime-8))*eighthHr;
+                const overtimePay = parseInt(hourSalary*2*secondHr)+parseInt(hourSalary*6*thridHr)+parseInt(hourSalary*parseInt (overtime-8))*eighthHr.toFixed(1000);
                 result.innerHTML="奴工的醫藥費"+overtimePay;
         }else{
             if(overtime>12){
-                result.innerHTML="您已經違反勞基法,請打1999";
+                result.innerHTML="您已經違反勞基法,請打1999或1955";
             }
         }
     }}

@@ -2,13 +2,13 @@ html, body {
     height: 100%;
   
     font-family: robot;
-    background-color: gray;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .index{
-    background-color: rgba(65, 65, 195, 0.805);
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     width: 400px;
     color:white;
     padding: 40px;
@@ -47,6 +47,27 @@ html, body {
     transition: 0.7s;
 }
 
+.index button:hover {
+    background-color: rgb(0, 0, 0);
+    transition: 0.7s;
+    color: white; /* 可選：讓文字變白以便看清楚 */
+  }
+  .index button {
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .index button:hover {
+    background-color: black;
+  }
+  
+
+
 .index select{
     width: 200px;
     font-size: 25px;
@@ -54,3 +75,58 @@ html, body {
     color:white 
 }
 
+/* .readme{
+    font-size: 20px;
+    align-content: right ;
+    background-color: rgba(128, 128, 128, 0.592);
+    padding: 12px;
+    border-radius: 40px;
+    line-height: 45px;
+    box-shadow: 10px,10px,10px gray;
+} */
+
+a:visited { 
+color:white; 
+text-decoration:none;
+font-size: 20px;
+align-content: right ;
+background-color: gray;
+padding: 12px;
+border-radius: 40px;
+line-height: 45px;
+box-shadow: 200px,10px,10px black;
+z-index: 2020;
+   /* 訪問過的超連結格式  */
+} 
+
+a:link{
+    color: white ;
+    text-decoration:none; 
+    font-size: 20px;
+    align-content: right ;
+    background-color: gray;
+    padding: 12px;
+    border-radius: 40px;
+    line-height: 45px;
+    box-shadow: 200xpx,10px,10px black;
+    z-index: 2020;
+
+    .row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
+      .row input {
+        width: 150px;
+        margin-right: 10px;
+      }
+      
+      .result-text {
+        font-size: 16px;
+        color: #333;
+      }
+      
+
+    
+}
